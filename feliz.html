@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+body
+
+
+{     
+     background: url("https://i.pinimg.com/originals/f2/44/79/f24479553e8919bb806886e7454de13f.gif");
+     background-repeat: no-repeat;
+     
+    margin: 0;  
+    padding: 0;
+    box-sizing: border-box;                                                                                                
+    font-family: 'Press Start 2P', cursive;
+    scroll-behavior: smooth;
+    text-align: center;
+    color: #fff;
+}
+#cardB{
+    position: relative;
+    top:7ch;
+   
+    transform-style: preserve-3d;
+    justify-content: center;
+    display: flex;
+    transition: all 0.5s;
+    
+    
+
+}
+#cardB img{
+    position: relative;
+    top: -8ch;
+    width: 8ch;
+    height: 8ch;
+    border-radius: 100%;
+    border: none;
+}
+
+.face{
+    height: 27ch;
+    width: 17ch;
+    backdrop-filter: blur(25px);
+    border-radius: 20px;
+    border: 1px solid rgba(255,255, 255,0.5);
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    position:absolute;
+    
+}
+#front{
+    text-align: center;
+    color: #f15;
+    transform: rotateY(180deg);
+    background: url("https://data.whicdn.com/images/270444699/original.gif");
+    
+    
+}
+#front p{
+    position: absolute;
+    top:2ch;
+    font-size: 5ch;
+}
+#front h1{
+    font-size: 22px;
+}
+#bak{
+    transition: 0.8s;
+    background: url("https://64.media.tumblr.com/f15c7fa530698b0dbd7c065bfa6fc4e9/tumblr_p8z8fjlMo21v2useeo1_500.gifv");
+    
+}
+#bak p{
+     color: #f15;
+    position: inherit;
+    top: 9ch;
+}
+
+/*#bak:hover{
+    top:-2ch ;
+    background: #ff0157;
+    height: 29ch;
+    width: 19ch;
+}*/
+.flip{
+    transform: rotateY(180deg);
+
+}
+
+@keyframes voa{
+            0%{
+                transform: translateX(0ch);
+
+            }
+            
+            100%{
+                transform: translateY(3ch);
+            }
+                      
+        }
+</style>
+</head>
+<body>
+
+    <h1></h1>
+ 
+    <div class="flip" id="cardB">
+                <div class="face" id="front">
+                  <h1><span class="auto-input"></span></h1>
+                  
+                  <p>❤️</p>
+                </div>
+                
+      
+      </div>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script>
+      var typed = new Typed(".auto-input",{
+       strings:["Oi deve","Seu trabalho é importante", "Você faz arte" , "ajuda as pessoas", "você é foda ","sei que é dificil","mas continua firme","você faz arte","então forcinha coisa linda","continua estudando","você é 10 :)"],
+       typeSpeed:100,
+       backSpeed:100,
+       loop:true
+   })
+ 
+</script>
+</body>
+</html>
