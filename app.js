@@ -1,6 +1,7 @@
 const express = require('express');
 const app = express();
 
+const index= require("./routes/index")
 
 app.set("view engine","ejs");
 
@@ -28,9 +29,7 @@ res.send(idd)
 
 
 })
-app.get("/",(req,res)=>{
-  res.render("index")
-})
+app.use("/",index)
 
 
 app.listen(8666,()=>{

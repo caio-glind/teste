@@ -6,6 +6,6 @@ let produto = [
     {nome:"E",custa:5}
        ];
     
-       for (let produtos of produto){
-       console.log( produto)
+       for(let i=0; i<produto.length; i++){
+       console.log( produto[i].nome)
     }
